@@ -1,0 +1,580 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+
+  .hide {
+    display: none;
+  }
+}
+
+.main_container {
+  width: 90%;
+  max-width: 1200px;
+  background-color: rgba(255, 255, 255, 0.897);
+  box-shadow: 0 0 40px rgb(209, 209, 209);
+  margin: 0 auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.cryptoContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+
+h1 {
+  font-size: 4rem;
+  margin-top: 10rem;
+  font-family: "Open Sans";
+  font-weight: 600;
+  text-align: center;
+}
+
+h2 {
+  font-size: 3rem;
+  margin-top: -1rem;
+  font-family: "Open Sans";
+  font-weight: 200;
+  text-align: center;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+h3 {
+  font-size: 2rem;
+  margin-top: -2rem;
+  font-family: "Open Sans";
+  font-weight: 200;
+  display: flex;
+  width: 34%;
+}
+
+#heading {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding-right: 5rem;
+  padding-left: 5rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  margin: 2rem;
+  margin-top: 0.2rem;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  margin-top: 10rem;
+  border-bottom: 0.1rem;
+  border-top: 0rem;
+  border-left: 0rem;
+  border-right: 0rem;
+  max-width: 1000px;
+  border-style: solid;
+  border-color: rgb(41, 41, 41);
+  justify-content: center;
+}
+#heading1 {
+  flex: 1.5;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+#heading2 {
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+#heading3 {
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+#heading4 {
+  flex: 1;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+.box {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  height: 60px;
+  background-color: rgb(243, 247, 252);
+  padding: 5rem;
+  margin: 1rem auto;
+  box-sizing: border-box;
+  border-radius: 40px;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in forwards;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#data1 {
+  flex: 1.5;
+  background-color: rgb(243, 247, 252);
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+#data2 {
+  flex: 1;
+  background-color: rgb(243, 247, 252);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+#data3 {
+  flex: 1;
+  background-color: rgb(243, 247, 252);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+#data4 {
+  flex: 1;
+  background-color: rgb(243, 247, 252);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+#loadMoreBtn {
+  display: flex;
+  width: 50%;
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  justify-content: center;
+  font-family: "Open Sans";
+  font-size: 0.8rem;
+
+  background-color: rgb(243, 247, 252);
+  padding: 0.5rem;
+  border: solid 1px;
+  border-color: white;
+  border-radius: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(48, 48, 48);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 375px) and (max-width: 576px) {
+  #heading {
+    display: flex;
+    width: 100%;
+    margin: 0rem;
+    margin-top: 3rem;
+    border-bottom: 0.01rem;
+    border-top: 0rem;
+    border-left: 0rem;
+    border-right: 0rem;
+    border-style: solid;
+    border-color: rgb(41, 41, 41);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .main_container h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: rgb(154, 166, 178);
+    margin-top: 5rem;
+  }
+  .main_container h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: -0.5rem;
+    color: rgb(188, 204, 220);
+  }
+
+  .main_container #heading1 {
+    font-size: 0.6rem;
+    margin-left: -4rem;
+  }
+  .main_container #heading2 {
+    font-size: 0.6rem;
+    margin-left: -1rem;
+  }
+  .main_container #heading3 {
+    font-size: 0.6rem;
+    margin-left: -1rem;
+  }
+  .main_container #heading4 {
+    font-size: 0.6rem;
+    margin-right: -4.5rem;
+  }
+
+  .main_container #data1 {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-left: -1rem;
+  }
+
+  .main_container #data2,
+  .main_container #data3 {
+    font-size: 0.6rem;
+    margin-right: 0.5rem;
+  }
+  .main_container #data4 {
+    font-size: 0.6rem;
+    margin-right: -1rem;
+  }
+  .box {
+    padding: 2.5rem;
+  }
+  #loadMoreBtn {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  #heading {
+    display: flex;
+    width: 100%;
+    margin: 0rem;
+    margin-top: 3rem;
+    border-bottom: 0.01rem;
+    border-top: 0rem;
+    border-left: 0rem;
+    border-right: 0rem;
+    border-style: solid;
+    border-color: rgb(41, 41, 41);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+  .main_container h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: rgb(154, 166, 178);
+    margin-top: 5rem;
+  }
+  .main_container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: -0.5rem;
+    color: rgb(188, 204, 220);
+  }
+
+  .main_container #heading1 {
+    font-size: 0.8rem;
+    margin-left: -4rem;
+  }
+  .main_container #heading2 {
+    font-size: 0.8rem;
+    margin-left: -1rem;
+  }
+  .main_container #heading3 {
+    font-size: 0.8rem;
+    margin-left: -1rem;
+  }
+  .main_container #heading4 {
+    font-size: 0.8rem;
+    margin-right: -3rem;
+  }
+
+  .main_container #data1 {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+    margin-left: -1rem;
+  }
+  .main_container #data2,
+  .main_container #data3,
+  .main_container #data4 {
+    font-size: 0.8rem;
+    margin-right: 0.5rem;
+  }
+  .box {
+    padding: 3rem;
+  }
+  #loadMoreBtn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  #heading {
+    display: flex;
+    width: 100%;
+    margin: 0rem;
+    margin-top: 3rem;
+    border-bottom: 0.01rem;
+    border-top: 0rem;
+    border-left: 0rem;
+    border-right: 0rem;
+    border-style: solid;
+    border-color: rgb(41, 41, 41);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .main_container h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(154, 166, 178);
+    margin-top: 5rem;
+  }
+  .main_container h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: -0.5rem;
+    color: rgb(188, 204, 220);
+  }
+
+  .main_container #heading1 {
+    font-size: 1rem;
+    margin-left: -4rem;
+  }
+  .main_container #heading2 {
+    font-size: 1rem;
+    margin-left: -1rem;
+  }
+  .main_container #heading3 {
+    font-size: 1rem;
+    margin-left: -1rem;
+  }
+  .main_container #heading4 {
+    font-size: 1rem;
+    margin-right: -1.5rem;
+  }
+
+  .main_container #data1 {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+    margin-left: -1rem;
+  }
+  .main_container #data2,
+  .main_container #data3,
+  .main_container #data4 {
+    font-size: 1rem;
+    margin-right: 0.5rem;
+  }
+  .box {
+    padding: 3rem;
+  }
+  #loadMoreBtn {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  #heading {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0rem;
+    margin-top: 3rem;
+    border-bottom: 0.01rem;
+    border-top: 0rem;
+    border-left: 0rem;
+    border-right: 0rem;
+    border-style: solid;
+    border-color: rgb(41, 41, 41);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+  }
+
+  .main_container h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: rgb(154, 166, 178);
+    margin-top: 5rem;
+  }
+  .main_container h2 {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: -0.5rem;
+    color: rgb(188, 204, 220);
+  }
+
+  .main_container #heading1 {
+    font-size: 1.2rem;
+    margin-left: -3rem;
+  }
+  .main_container #heading2 {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+  }
+  .main_container #heading3 {
+    font-size: 1.2rem;
+    margin-left: 0rem;
+  }
+  .main_container #heading4 {
+    font-size: 1.2rem;
+    margin-right: -1rem;
+  }
+
+  .main_container #data1 {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    margin-left: -1rem;
+  }
+  .main_container #data2,
+  .main_container #data3,
+  .main_container #data4 {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+  }
+  .box {
+    padding: 3rem;
+  }
+  #loadMoreBtn {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #heading {
+    display: flex;
+    margin: 1rem auto;
+    margin-top: 3rem;
+    border-bottom: 0.01rem;
+    border-top: 0rem;
+    border-left: 0rem;
+    border-right: 0rem;
+    border-style: solid;
+    border-color: rgb(41, 41, 41);
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    max-width: 1000px;
+  }
+
+  .main_container h1 {
+    font-size: 4rem;
+    text-align: center;
+    color: rgb(154, 166, 178);
+    margin-top: 5rem;
+  }
+  .main_container h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: -0.5rem;
+    color: rgb(188, 204, 220);
+  }
+
+  .main_container #heading1 {
+    font-size: 1.4rem;
+    margin-right: 0rem;
+    margin-left: 0rem;
+  }
+
+  .main_container #heading2 
+  .main_container #heading3 {
+    font-size: 1.4rem;
+    margin-left: 3rem;
+  }
+  .main_container #heading4 {
+    font-size: 1.4rem;
+    margin-left: -1rem;
+    margin-right: 3rem;
+  }
+
+  .main_container #data1 {
+    font-size: 1.9rem;
+    margin-right: 0.5rem;
+    margin-left: -1rem;
+  }
+  .main_container #data2,
+  .main_container #data3,
+  .main_container #data4 {
+    font-size: 1.4rem;
+    margin-right: 0.5rem;
+  }
+  .box {
+    padding: 3rem;
+  }
+  #loadMoreBtn {
+    font-size: 1.6rem;
+  }
+}
+
+.container-fluid {
+  margin-top: 1rem;
+  border-radius: 30px;
+  border: solid 1px;
+  border-color: rgb(154, 166, 178);
+  padding: 0.5rem;
+}
+
+.navbar-toggler.search-toggler {
+  border-radius: 50%;
+  border: 2px solid rgb(154, 166, 178);
+  padding: 0.5rem 0.6rem;
+  color: rgb(154, 166, 178);
+  background-color: white;
+}
+.search-toggler:hover {
+  background-color: rgb(188, 204, 220);
+  color: white;
+}
+.container-fluid {
+  width: 80%;
+  border-radius: 30px;
+  border: solid 1px;
+  border-color: rgb(154, 166, 178);
+  padding: 0.5rem;
+}
+
+.form-control.me-2 {
+  border-radius: 30px;
+}
+
+.btn.btn-outline-success {
+  border-radius: 30px;
+  border: 1px solid rgb(154, 166, 178);
+  color: rgb(154, 166, 178);
+}
+.fw-semibold {
+  color: rgb(188, 204, 220);
+  font-family: "Open Sans";
+  font-weight: 100;
+  font-size: clamp(0.7rem, 1rem, 2rem);
+}
